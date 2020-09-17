@@ -9,6 +9,7 @@ namespace DnD_Text_Adventure
         {
             Random rand = new Random();
             CharacterCreator PlayersCharacter = new CharacterCreator();
+            Characrand()
             CharacterCreator AiCharacterOne = new CharacterCreator();
             CharacterCreator AiCharacterTwo = new CharacterCreator();
             string tempPlayerInput;
@@ -95,6 +96,10 @@ namespace DnD_Text_Adventure
                 }
             }
             return "c";
+        }
+        public static void EnemyEncounter()
+        {
+            
         }
     }
 }

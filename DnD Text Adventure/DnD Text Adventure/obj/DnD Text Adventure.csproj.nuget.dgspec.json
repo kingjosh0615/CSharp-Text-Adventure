@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "N:\\C# Stuff\\DnD Text Adventure\\DnD Text Adventure\\DnD Text Adventure.csproj": {}
+    "N:\\C# Stuff\\CSharp-Text-Adventure\\DnD Text Adventure\\DnD Text Adventure\\DnD Text Adventure.csproj": {}
   },
   "projects": {
-    "N:\\C# Stuff\\DnD Text Adventure\\DnD Text Adventure\\DnD Text Adventure.csproj": {
+    "N:\\C# Stuff\\CSharp-Text-Adventure\\DnD Text Adventure\\DnD Text Adventure\\DnD Text Adventure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "N:\\C# Stuff\\DnD Text Adventure\\DnD Text Adventure\\DnD Text Adventure.csproj",
+        "projectUniqueName": "N:\\C# Stuff\\CSharp-Text-Adventure\\DnD Text Adventure\\DnD Text Adventure\\DnD Text Adventure.csproj",
         "projectName": "DnD Text Adventure",
-        "projectPath": "N:\\C# Stuff\\DnD Text Adventure\\DnD Text Adventure\\DnD Text Adventure.csproj",
+        "projectPath": "N:\\C# Stuff\\CSharp-Text-Adventure\\DnD Text Adventure\\DnD Text Adventure\\DnD Text Adventure.csproj",
         "packagesPath": "C:\\Users\\WILES_JOSHUA\\.nuget\\packages\\",
-        "outputPath": "N:\\C# Stuff\\DnD Text Adventure\\DnD Text Adventure\\obj\\",
+        "outputPath": "N:\\C# Stuff\\CSharp-Text-Adventure\\DnD Text Adventure\\DnD Text Adventure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

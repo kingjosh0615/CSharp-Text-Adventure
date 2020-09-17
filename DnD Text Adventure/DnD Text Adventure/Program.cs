@@ -19,16 +19,16 @@ namespace DnD_Text_Adventure
             PlayersCharacter.characterName = Console.ReadLine();
             Console.WriteLine("Now you need to pick you class. Your friends already picked most of the classes so now you can choose rouge or cleric.");
             tempPlayerInput = Console.ReadLine();
-            PlayersCharacter.characterClass = DoubleQuestionConfirmation(tempPlayerInput, "rouge", "cleric");
+            PlayersCharacter.characterClass = DoubleQuestionConfirmation(tempPlayerInput, "Rouge", "Cleric");
             Console.WriteLine("Time to choose your race. Would you like to be an elf, dwarf, or human?");
             tempPlayerInput = Console.ReadLine();
-            PlayersCharacter.characterRace = TripleQuestionConfirmation(tempPlayerInput, "elf", "dwarf", "human");
+            PlayersCharacter.characterRace = TripleQuestionConfirmation(tempPlayerInput, "Elf", "Dwarf", "Human");
             Console.WriteLine("What would you like as a sidearm, sword, dagger, or blunderbuss?");
             tempPlayerInput = Console.ReadLine();
             PlayersCharacter.sideArm = TripleQuestionConfirmation(tempPlayerInput, "sword", "dagger", "blunderbuss");
 
-            AiCharacterOne.characterClass = "mage";
-            AiCharacterTwo.characterClass = "paladin";
+            AiCharacterOne.characterClass = "Mage";
+            AiCharacterTwo.characterClass = "Paladin";
             AiCharacterOne.characterName = "Eric";
             AiCharacterTwo.characterName = "Ben";
             AiCharacterOne.characterRace = "Elf";
@@ -37,7 +37,7 @@ namespace DnD_Text_Adventure
             AiCharacterTwo.sideArm = "warhammer";
 
             Console.WriteLine($"Alright so you are a {PlayersCharacter.characterRace} {PlayersCharacter.characterClass} named {PlayersCharacter.characterName}. Sounds like a pretty good build to me.");
-            Console.WriteLine($"You");
+            Console.WriteLine($"Your friends also made characters! They made a {AiCharacterOne.characterRace} {AiCharacterOne.characterClass} named {AiCharacterOne.characterName} and a {AiCharacterTwo.characterRace} {AiCharacterTwo.characterClass} named {AiCharacterTwo.characterName}.");
 
 
 
@@ -47,12 +47,12 @@ namespace DnD_Text_Adventure
         {
             while (QuestionConfirmationStopper == true)
             {
-                if (userInput.ToLower() == optionOne)
+                if (userInput.ToLower() == optionOne.ToLower())
                 {
                     QuestionConfirmationStopper = false;
                     return optionOne;
                 }
-                else if (userInput.ToLower() == optionTwo)
+                else if (userInput.ToLower() == optionTwo.ToLower())
                 {
                     QuestionConfirmationStopper = false;
                     return optionTwo;
@@ -71,17 +71,17 @@ namespace DnD_Text_Adventure
         {
             while (QuestionConfirmationStopper == true)
             {
-                if (userInput.ToLower() == optionOne)
+                if (userInput.ToLower() == optionOne.ToLower())
                 {
                     QuestionConfirmationStopper = false;
                     return optionOne;
                 }
-                else if (userInput.ToLower() == optionTwo)
+                else if (userInput.ToLower() == optionTwo.ToLower())
                 {
                     QuestionConfirmationStopper = false;
                     return optionTwo;
                 }
-                else if (userInput.ToLower() == optionThree)
+                else if (userInput.ToLower() == optionThree.ToLower())
                 {
                     QuestionConfirmationStopper = false;
                     return optionThree;

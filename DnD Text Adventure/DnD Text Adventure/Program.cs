@@ -8,6 +8,7 @@ namespace DnD_Text_Adventure
         static void Main(string[] args)
         {
             Random rand = new Random();
+
             CharacterCreator PlayersCharacter = new CharacterCreator();
             PlayersCharacter.healthPoints = rand.Next(10, 20);
             PlayersCharacter.strength = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
@@ -25,9 +26,37 @@ namespace DnD_Text_Adventure
             PlayersCharacter.initativeModifier = PlayersCharacter.dexterityMod;
 
             CharacterCreator AiCharacterOne = new CharacterCreator();
-            PlayersCharacter.healthPoints = rand.Next(10, 20);
+            AiCharacterOne.healthPoints = rand.Next(10, 20);
+            AiCharacterOne.strength = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterOne.strengthMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterOne.strength - 10) / 2)));
+            AiCharacterOne.dexterity = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterOne.dexterityMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterOne.strength - 10) / 2)));
+            AiCharacterOne.constitution = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterOne.constitutionMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterOne.strength - 10) / 2)));
+            AiCharacterOne.intelligence = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterOne.intelligenceMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterOne.strength - 10) / 2)));
+            AiCharacterOne.wisdom = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterOne.wisdomMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterOne.strength - 10) / 2)));
+            AiCharacterOne.charisma = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterOne.charismaMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterOne.strength - 10) / 2)));
+            AiCharacterOne.initativeModifier = AiCharacterOne.dexterityMod;
+
             CharacterCreator AiCharacterTwo = new CharacterCreator();
             PlayersCharacter.healthPoints = rand.Next(10, 20);
+            AiCharacterTwo.strength = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterTwo.strengthMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterTwo.strength - 10) / 2)));
+            AiCharacterTwo.dexterity = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterTwo.dexterityMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterTwo.strength - 10) / 2)));
+            AiCharacterTwo.constitution = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterTwo.constitutionMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterTwo.strength - 10) / 2)));
+            AiCharacterTwo.intelligence = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterTwo.intelligenceMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterTwo.strength - 10) / 2)));
+            AiCharacterTwo.wisdom = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterTwo.wisdomMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterTwo.strength - 10) / 2)));
+            AiCharacterTwo.charisma = rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7) + rand.Next(1, 7);
+            AiCharacterTwo.charismaMod = Convert.ToInt32(Math.Floor(Convert.ToDouble((AiCharacterTwo.strength - 10) / 2)));
+            AiCharacterTwo.initativeModifier = AiCharacterTwo.dexterityMod;
+
             string tempPlayerInput;
             string tempDoubleChoiceSwitch;
 
